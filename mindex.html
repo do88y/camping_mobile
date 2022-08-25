@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Seulgi Seo">
+    <meta name="keywords" content="camping, 캠핑장">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="imgs/seoul.png">
+    <title>서울로 떠나는 캠핑</title>
+    <!-- 구글 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: "SDSwagger";
+            src: url(./fonts/SDSwaggerTTF.ttf) format("truetype");
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul {
+            list-style: none;
+        }
+        /* 링크 스타일 */
+        a:link {
+            color: #000;
+            text-decoration: none;
+        }
+        a:visited {
+            color: #000;
+        }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.8;
+            color: #212529;
+            text-align: left;
+            background-color: #fff;
+        }
+        #logo {
+            width: 8vw;
+            vertical-align: middle;
+        }
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            flex-flow: row nowrap;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            padding: 0.3rem 1rem;
+            box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+            align-items: center;
+            justify-content: flex-start;
+            background-color: #fff;
+            z-index: 1000;
+        }
+        .nav-menu {
+            display: flex;
+            flex-basis: auto;
+            flex-direction: row;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            justify-content: flex-end!important;
+            flex-grow: 1;
+            align-items: center;
+            font-weight: 500;
+            text-align: left;
+        }
+        .contents-btn {
+            font-size: 2.5vw;
+            padding: 0 0.9rem;
+        }
+        #image-wrap {
+            position: relative;
+        }
+        h1 {
+            font-family: SDSwagger;
+            font-size: 9vw;
+            font-weight: 500;
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+            
+        }
+        #image-wrap img {
+            margin: 0 auto;
+            object-fit: cover;
+            width: 100%;
+        }
+        .contents {
+            width: 100%;
+            padding-top: 3rem!important;
+            padding: 10px 15px 64px 15px;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 1024px;
+            margin-bottom: auto;
+        }
+
+        .contents h2 {
+            font-family: SDSwagger;
+            font-size: 7vw;
+            font-weight: 500;
+            letter-spacing: 1.2px;
+            text-align: center;
+        }
+        .contents_inner {
+            padding-bottom: 3rem;
+            margin-bottom: 3rem;
+            margin-top: 3rem;
+        }
+        .inbox img {
+            width: 100%;
+        }
+        .contents .more {
+            margin-top: 32px;
+            margin-bottom: 3rem;
+            font-weight: 500;
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.8;
+            color: #000;
+        }
+        .more a {
+            display: block;
+            position: relative;
+            width: 50vw;
+            max-width: 285px;
+            padding: 2vw;
+            margin: 0 auto;
+            border: 1px solid #4e4e4e;
+            border-radius: 50px;
+        }
+        footer {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            border-top: 1px solid #373737;
+        }
+        .sns_group {
+            padding: 6px 0 3px 0;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        .sns_group img {
+            width: 30px;
+        }
+        address {
+            font-style: normal;
+            font-size: 0.9em;
+            line-height: 1.4;
+            border-top: 1px solid #373737;
+            padding-top: 10px;
+        }
+
+        .txt1 {
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+
+        .txt2 > span::after {
+            margin: 0 5px;
+            content: " | ";
+        }
+
+        .txt3 {
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+    </style>
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- wrapper 영역 시작 -->
+    <div id="wrapper">
+        <!-- header 영역 시작 -->
+        <header>
+            <div class="logo">
+                <a href="mindex.html">
+                    <img id="logo" src="imgs/tent.png" alt="로고">
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <a href="#div-food" class="contents-btn">FOODS</a>
+                <a href="#div-solo" class="contents-btn">SOLO</a>
+                <a href="#div-sleep" class="contents-btn">DEEP SLEEP</a>
+                <a href="#div-dog" class="contents-btn">WITH DOGS</a>
+            </nav>
+        </header>
+        <!-- header 영역 종료 -->
+
+        <!-- 이미지 영역 시작 -->
+        <div id="image-wrap">
+            <h1 id="image-title">서울로 떠나는 캠핑</h1>
+            <img src="imgs/main_night.jpg" alt="night">
+        </div>
+        <!-- 이미지 영역 종료 -->
+
+        <!-- 콘텐츠 영역 시작 -->
+        <div class="contents">
+            <div class="contents-inner">
+                <div class='inbox'>
+                    <h2 class="title" id="div-food">캠핑 음식</h2>
+                    <div>
+                        <a href="#"><img src="imgs/main_food.jpg" alt="캠핑 음식"></a>
+                    </div>
+                </div>
+                <div class='more'>
+                    <a href="#">레시피 보러가기</a>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="contents-inner">
+                <div class='inbox'>
+                    <h2 class="title" id="div-solo">1인 캠핑</h2>
+                    <div>
+                        <a href="#"><img src="imgs/main_solo.jpg" alt="1인 캠핑"></a>
+                    </div>
+                </div>
+                <div class='more'>
+                    <a href="#">꿀팁 보러가기</a>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="contents-inner">
+                <div class='inbox'>
+                    <h2 class="title" id="div-sleep">텐트에서 숙면하는 방법</h2>
+                    <div>
+                        <a href="#"><img src="imgs/main_sleep.jpg" alt="텐트에서 숙면하는 방법"></a>
+                    </div>
+                </div>
+                <div class='more'>
+                    <a href="#">꿀팁 보러가기</a>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="contents-inner">
+                <div class='inbox'>
+                    <h2 class="title" id="div-dog">반려견과 함께 캠핑 즐기기</h2>
+                    <div>
+                        <a href="#"><img src="imgs/main_dog.jpg" alt="반려견과 함께 캠핑 즐기기"></a>
+                    </div>
+                </div>
+                <div class='more'>
+                    <a href="#">꿀팁 보러가기</a>
+                </div>
+            </div>
+        </div>
+        <!-- 콘텐츠 영역 종료 -->
+
+        <!-- footer 영역 시작 -->
+        <footer>
+            <ul class="sns_group">
+                <li><a href="https://instagram.com/home/"><img src="imgs/instagram.png" alt="instagram"></a></li>
+                <li><a href="https://www.facebook.com/sharer.php?s=100&p[url]=https%3A%2F%2Fwww.seoul.go.kr%2Fstory%2Fcampingjang%2Findex.html&p[images][0]=&p[title]=%EC%84%9C%EC%9A%B8%EB%A1%9C%20%EB%96%A0%EB%82%98%EB%8A%94%20%EC%BA%A0%ED%95%91&p[summary]="><img src="imgs/facebook.png" alt="facebook"></a></li>
+                <li><a href="https://twitter.com/home/?status=%EC%84%9C%EC%9A%B8%EB%A1%9C%20%EB%96%A0%EB%82%98%EB%8A%94%20%EC%BA%A0%ED%95%91%20https://www.seoul.go.kr/story/campingjang/index.html"><img src="imgs/twitter.png" alt="twitter"></a></li>
+            </ul>
+            <address>
+                <p class="txt1">서울특별시청</p>
+                <p class="txt2"><span>04524</span><span>서울특별시 중구 세종대로 110</span>대표전화 02-120</p>
+                <p class="txt3">&copy;Seoul Metropolitan Goverment all rights reserved</p>
+            </address>
+        </footer>
+        <!-- footer 영역 종료 -->
+
+    </div>
+    <!-- wrapper 영역 종료 -->
+</body>
+</html>
